@@ -1,0 +1,122 @@
+# configs/extractor_vit.yaml
+model_name: vit_b_16 # Or vit_b_32, vit_l_16, etc. from torchvision.models
+
+vit_extractor:
+  # --- Model Specific ---
+  num_bits: 32        # REQUIRED: Number of output bits
+  pretrained: True    # Load weights pretrained on ImageNet
+  img_size: 224       # ViT standard input size (can be 256, but 224 is common for pretrained weights)
+
+  # --- Training Specific (can be overridden by args) ---
+  # Add any other model-specific hyperparameters here if needed
+
+
+
+# # extractor.yaml (Modified for float vector output and MSE loss)
+
+# # Default model to use if --extractor_model is not specified in arguments
+# model: convnext_tiny # or any other model you prefer as default
+
+# # --- "Hidden" type models (Less common for image-to-vector, but included if you use them) ---
+# # These seem like custom CNNs rather than standard backbones with pixel decoders.
+# # Their 'num_bits' should also match your target float vector dimensionality.
+# # They might not have a 'sigmoid_output' flag in their original design,
+# # so you'd need to ensure their final output layer is linear.
+
+# hidden:
+#   num_blocks: 8
+#   num_bits: 32 # <-- Dimensionality of your float vector
+#   in_channels: 3
+#   z_channels: 64
+#   normalization: 'group'
+#   activation: 'gelu'
+#   # Ensure the output layer for num_bits is linear (no final sigmoid/tanh)
+
+# hidden_orig:
+#   num_blocks: 8
+#   num_bits: 32 # <-- Dimensionality of your float vector
+#   in_channels: 3
+#   z_channels: 64
+#   normalization: 'batch'
+#   activation: 'relu'
+#   # Ensure the output layer for num_bits is linear
+
+# # --- SAM-based Extractors ---
+# sam_small:
+#   encoder:
+#     img_size: 256
+#     embed_dim: 384
+#     out_chans: 384
+#     depth: 12
+#     num_heads: 6
+#     patch_size: 16
+#     global_attn_indexes: [2, 5, 8, 11]
+#     window_size: 8
+#     mlp_ratio: 4
+#     qkv_bias: True
+#     use_rel_pos: True
+#   pixel_decoder:
+#     pixelwise: False
+#     upscale_stages: [1]
+#     embed_dim: 384
+#     nbits: 32       # <-- Dimensionality of your float vector
+#     sigmoid_output: True # <-- Set to False for MSE with potentially unbounded floats
+#     upscale_type: 'bilinear'
+
+# sam_small_pw: # "pw" likely means pixel-wise output
+#   encoder:
+#     img_size: 256
+#     embed_dim: 384
+#     out_chans: 384
+#     depth: 12
+#     num_heads: 6
+#     patch_size: 16
+#     global_attn_indexes: [2, 5, 8, 11]
+#     window_size: 8
+#     mlp_ratio: 4
+#     qkv_bias: True
+#     use_rel_pos: True
+#   pixel_decoder:
+#     pixelwise: True
+#     upscale_stages: [4, 2, 2]
+#     embed_dim: 384
+#     nbits: 32       # <-- Dimensionality of your float vector
+#     sigmoid_output: True # <-- Set to False
+#     upscale_type: 'bilinear'
+
+# # --- ConvNeXt-based Extractors ---
+# convnext_tiny:
+#   encoder: # These are parameters for the ConvNeXt backbone itself
+#     depths: [3, 3, 9, 3]
+#     dims: [96, 192, 384, 768]
+#     # in_chans: 3 # Usually implicit or handled by build_extractor
+#     # pretrained: true # This might be a top-level key for convnext_tiny, or inside encoder.
+#                       # The build_extractor logic determines how it's used.
+#   pixel_decoder: # Parameters for the head that processes encoder features
+#     pixelwise: False # If False, likely global average pooling is applied before final prediction layer
+#     upscale_stages: [1] # Minimal upscaling if pixelwise is False (may not be used if GAP)
+#     embed_dim: 768  # Should match the output channels of the last ConvNeXt stage
+#     nbits: 32       # <-- Dimensionality of your float vector
+#     sigmoid_output: True # <-- Set to False
+
+# convnext_tiny_pw:
+#   encoder:
+#     depths: [3, 3, 9, 3]
+#     dims: [96, 192, 384, 768]
+#   pixel_decoder:
+#     upscale_stages: [4, 4, 2] # Relevant if pixelwise is True
+#     embed_dim: 768
+#     nbits: 32       # <-- Dimensionality of your float vector
+#     sigmoid_output: False # <-- Set to False
+#     pixelwise: True
+
+# convnext_base_pw:
+#   encoder:
+#     depths: [3, 3, 27, 3]
+#     dims: [128, 256, 512, 1024]
+#   pixel_decoder:
+#     upscale_stages: [4, 4, 2]
+#     embed_dim: 1024
+#     nbits: 32       # <-- Dimensionality of your float vector
+#     sigmoid_output: False # <-- Set to False
+#     pixelwise: True

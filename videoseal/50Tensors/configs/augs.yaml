@@ -1,0 +1,10 @@
+# Only identity transformation (no augmentation)
+masks:
+  kind: none
+
+# Only identity augmentation with probability 1
+augs:
+  identity: 1
+
+# Empty parameters since identity needs none
+augs_params: {}
