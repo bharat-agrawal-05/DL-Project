@@ -176,11 +176,3 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-dataset/
-*output*/
-*img*
-*tfevents*
-
-# Allow everything in videoseal2
-!videoseal2/
-!videoseal2/**
