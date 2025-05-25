@@ -1,0 +1,2 @@
+Name,Total_Loss,Extraction_Loss,Perturbation_Loss,Lambda_Extraction,Lambda_Perturbation,Bit_Accuracy
+P00W00_Iter001,9.696093,0.944110,0.254995,10.0,1.0,0.4844
