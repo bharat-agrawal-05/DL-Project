@@ -1,0 +1,174 @@
+[2025-05-19 02:58:09,321] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+You are using a model of type clip_text_model to instantiate a model of type . This is not supported for all configurations of models and can yield errors.
+/home/teaching/anaconda3/envs/diff/lib/python3.10/site-packages/transformers/models/clip/feature_extraction_clip.py:28: FutureWarning: The class CLIPFeatureExtractor is deprecated and will be removed in version 5 of Transformers. Please use CLIPImageProcessor instead.
+  warnings.warn(
+Loaded SD models. UNet: torch.float16, SD VAE: torch.float16, TextEnc: torch.float16, Latents: torch.float16
+Loading VideoSeal model from checkpoint: videoseal...
+File /home/teaching/Desktop/Grp_22/videoseal2/videoseal/ckpts/y_256b_img.pth exists, skipping download
+File /home/teaching/Desktop/Grp_22/videoseal2/videoseal/ckpts/y_256b_img.pth exists, skipping download
+Model loaded successfully from /home/teaching/Desktop/Grp_22/videoseal2/videoseal/ckpts/y_256b_img.pth with message: <All keys matched successfully>
+VideoSeal model loaded and moved to cuda:0.
+Target message: 128 bits, shape torch.Size([1, 128])
+  0%|          | 0/10 [00:00<?, ?it/s]100%|██████████| 10/10 [00:00<00:00, 152.69it/s]
+Overall Generation Sets:   0%|          | 0/1 [00:00<?, ?it/s]
+Generating set 1/1.
+--- Generating image 1/5 (Class Index: 0, Prompt: 'A realistic photo of airplane') ---
+
+Starting generation for class 0, seed 5001.
+
+Class 0 Steps:   0%|          | 0/119 [00:00<?, ?it/s][A  DGM Step T=953: Loss=1.064e+02, BitAcc=0.5156, GradNorm=3.178e+03
+
+Class 0 Steps:   1%|          | 1/119 [00:01<03:32,  1.80s/it][A  DGM Step T=937: Loss=1.052e+02, BitAcc=0.4375, GradNorm=3.209e+03
+
+Class 0 Steps:   3%|▎         | 3/119 [00:02<01:06,  1.75it/s][A  DGM Step T=921: Loss=9.500e+01, BitAcc=0.4609, GradNorm=1.691e+03
+
+Class 0 Steps:   4%|▍         | 5/119 [00:02<00:39,  2.86it/s][A  DGM Step T=905: Loss=9.094e+01, BitAcc=0.4531, GradNorm=4.695e+02
+
+Class 0 Steps:   6%|▌         | 7/119 [00:02<00:29,  3.82it/s][A  DGM Step T=889: Loss=8.899e+01, BitAcc=0.5312, GradNorm=1.730e+02
+
+Class 0 Steps:   8%|▊         | 9/119 [00:02<00:23,  4.63it/s][A  DGM Step T=873: Loss=8.944e+01, BitAcc=0.4844, GradNorm=6.380e+02
+
+Class 0 Steps:   9%|▉         | 11/119 [00:03<00:20,  5.27it/s][A  DGM Step T=857: Loss=9.468e+01, BitAcc=0.4219, GradNorm=2.469e+03
+
+Class 0 Steps:  11%|█         | 13/119 [00:03<00:18,  5.76it/s][A  DGM Step T=841: Loss=9.605e+01, BitAcc=0.5156, GradNorm=3.601e+03
+
+Class 0 Steps:  13%|█▎        | 15/119 [00:03<00:16,  6.13it/s][A  DGM Step T=825: Loss=9.140e+01, BitAcc=0.5469, GradNorm=1.086e+03
+
+Class 0 Steps:  14%|█▍        | 17/119 [00:04<00:15,  6.40it/s][A  DGM Step T=809: Loss=8.865e+01, BitAcc=0.5625, GradNorm=1.976e+02
+
+Class 0 Steps:  16%|█▌        | 19/119 [00:04<00:15,  6.61it/s][A  DGM Step T=793: Loss=1.232e+02, BitAcc=0.4141, GradNorm=3.771e+03
+
+Class 0 Steps:  18%|█▊        | 21/119 [00:04<00:14,  6.75it/s][A  DGM Step T=777: Loss=8.919e+01, BitAcc=0.4453, GradNorm=2.157e+02
+
+Class 0 Steps:  19%|█▉        | 23/119 [00:04<00:14,  6.85it/s][A  DGM Step T=761: Loss=1.034e+02, BitAcc=0.4375, GradNorm=2.297e+03
+
+Class 0 Steps:  21%|██        | 25/119 [00:05<00:13,  6.92it/s][A  DGM Step T=745: Loss=1.144e+02, BitAcc=0.4297, GradNorm=4.513e+03
+
+Class 0 Steps:  23%|██▎       | 27/119 [00:05<00:13,  6.97it/s][A  DGM Step T=729: Loss=8.887e+01, BitAcc=0.5078, GradNorm=1.996e+02
+
+Class 0 Steps:  24%|██▍       | 29/119 [00:05<00:12,  7.01it/s][A  DGM Step T=713: Loss=9.113e+01, BitAcc=0.4609, GradNorm=2.631e+03
+
+Class 0 Steps:  26%|██▌       | 31/119 [00:06<00:12,  7.03it/s][A  DGM Step T=697: Loss=9.299e+01, BitAcc=0.4609, GradNorm=1.667e+03
+
+Class 0 Steps:  28%|██▊       | 33/119 [00:06<00:12,  7.06it/s][A  DGM Step T=681: Loss=9.214e+01, BitAcc=0.4609, GradNorm=7.016e+02
+
+Class 0 Steps:  29%|██▉       | 35/119 [00:06<00:11,  7.07it/s][A  DGM Step T=665: Loss=9.437e+01, BitAcc=0.4766, GradNorm=8.325e+02
+
+Class 0 Steps:  31%|███       | 37/119 [00:06<00:11,  7.07it/s][A  DGM Step T=649: Loss=9.006e+01, BitAcc=0.5078, GradNorm=9.342e+02
+
+Class 0 Steps:  33%|███▎      | 39/119 [00:07<00:11,  7.08it/s][A  DGM Step T=633: Loss=8.917e+01, BitAcc=0.5000, GradNorm=2.786e+02
+
+Class 0 Steps:  34%|███▍      | 41/119 [00:07<00:10,  7.10it/s][A  DGM Step T=617: Loss=9.997e+01, BitAcc=0.5078, GradNorm=7.297e+02
+
+Class 0 Steps:  36%|███▌      | 43/119 [00:07<00:10,  7.09it/s][A  DGM Step T=601: Loss=9.773e+01, BitAcc=0.5547, GradNorm=5.427e+02
+
+Class 0 Steps:  38%|███▊      | 45/119 [00:08<00:10,  7.09it/s][A  DGM Step T=585: Loss=8.826e+01, BitAcc=0.5625, GradNorm=9.953e+01
+
+Class 0 Steps:  39%|███▉      | 47/119 [00:08<00:10,  7.10it/s][A  DGM Step T=569: Loss=9.009e+01, BitAcc=0.5469, GradNorm=2.127e+02
+
+Class 0 Steps:  41%|████      | 49/119 [00:08<00:09,  7.08it/s][A  DGM Step T=553: Loss=8.929e+01, BitAcc=0.3984, GradNorm=1.119e+02
+
+Class 0 Steps:  43%|████▎     | 51/119 [00:08<00:09,  7.08it/s][A  DGM Step T=537: Loss=8.902e+01, BitAcc=0.5547, GradNorm=3.142e+02
+
+Class 0 Steps:  45%|████▍     | 53/119 [00:09<00:09,  7.09it/s][A  DGM Step T=521: Loss=8.772e+01, BitAcc=0.5703, GradNorm=1.742e+02
+
+Class 0 Steps:  46%|████▌     | 55/119 [00:09<00:09,  7.08it/s][A  DGM Step T=505: Loss=8.754e+01, BitAcc=0.5625, GradNorm=1.064e+03
+
+Class 0 Steps:  48%|████▊     | 57/119 [00:09<00:08,  7.08it/s][A  DGM Step T=489: Loss=8.683e+01, BitAcc=0.5469, GradNorm=3.031e+02
+
+Class 0 Steps:  50%|████▉     | 59/119 [00:09<00:08,  7.08it/s][A  DGM Step T=473: Loss=9.729e+01, BitAcc=0.5000, GradNorm=4.666e+02
+
+Class 0 Steps:  51%|█████▏    | 61/119 [00:10<00:08,  7.07it/s][A  DGM Step T=457: Loss=8.369e+01, BitAcc=0.5938, GradNorm=1.783e+02
+
+Class 0 Steps:  53%|█████▎    | 63/119 [00:10<00:07,  7.07it/s][A  DGM Step T=441: Loss=7.346e+01, BitAcc=0.6641, GradNorm=3.297e+02
+
+Class 0 Steps:  55%|█████▍    | 65/119 [00:10<00:07,  7.07it/s][A  DGM Step T=425: Loss=6.622e+01, BitAcc=0.7031, GradNorm=2.132e+02
+
+Class 0 Steps:  56%|█████▋    | 67/119 [00:11<00:07,  7.07it/s][A  DGM Step T=409: Loss=6.117e+01, BitAcc=0.8047, GradNorm=5.049e+02
+
+Class 0 Steps:  58%|█████▊    | 69/119 [00:11<00:07,  7.08it/s][A  DGM Step T=393: Loss=9.458e+01, BitAcc=0.3906, GradNorm=5.813e+02
+
+Class 0 Steps:  60%|█████▉    | 71/119 [00:11<00:06,  7.08it/s][A  DGM Step T=377: Loss=8.859e+01, BitAcc=0.4688, GradNorm=1.047e+02
+
+Class 0 Steps:  61%|██████▏   | 73/119 [00:11<00:06,  7.07it/s][A  DGM Step T=361: Loss=6.688e+01, BitAcc=0.7344, GradNorm=1.974e+02
+
+Class 0 Steps:  63%|██████▎   | 75/119 [00:12<00:06,  7.06it/s][A  DGM Step T=345: Loss=5.648e+01, BitAcc=0.7891, GradNorm=2.016e+02
+
+Class 0 Steps:  65%|██████▍   | 77/119 [00:12<00:05,  7.06it/s][A  DGM Step T=329: Loss=5.856e+01, BitAcc=0.7969, GradNorm=1.210e+02
+
+Class 0 Steps:  66%|██████▋   | 79/119 [00:12<00:05,  7.06it/s][A  DGM Step T=313: Loss=4.128e+01, BitAcc=0.8984, GradNorm=1.698e+02
+
+Class 0 Steps:  68%|██████▊   | 81/119 [00:13<00:05,  7.08it/s][A  DGM Step T=297: Loss=3.754e+01, BitAcc=0.8594, GradNorm=1.057e+02
+
+Class 0 Steps:  70%|██████▉   | 83/119 [00:13<00:05,  7.08it/s][A  DGM Step T=281: Loss=2.566e+01, BitAcc=0.9609, GradNorm=1.255e+02
+
+Class 0 Steps:  71%|███████▏  | 85/119 [00:13<00:04,  7.07it/s][A  DGM Step T=265: Loss=2.106e+01, BitAcc=0.9375, GradNorm=8.223e+01
+
+Class 0 Steps:  73%|███████▎  | 87/119 [00:13<00:04,  7.07it/s][A  DGM Step T=249: Loss=1.175e+01, BitAcc=0.9766, GradNorm=5.301e+01
+
+Class 0 Steps:  75%|███████▍  | 89/119 [00:14<00:04,  7.06it/s][A  DGM Step T=233: Loss=1.393e+01, BitAcc=0.9766, GradNorm=5.841e+01
+
+Class 0 Steps:  76%|███████▋  | 91/119 [00:14<00:03,  7.05it/s][A  DGM Step T=217: Loss=9.778e+00, BitAcc=0.9844, GradNorm=4.817e+01
+
+Class 0 Steps:  78%|███████▊  | 93/119 [00:14<00:03,  7.06it/s][A  DGM Step T=201: Loss=1.132e+01, BitAcc=0.9766, GradNorm=4.727e+01
+
+Class 0 Steps:  80%|███████▉  | 95/119 [00:15<00:03,  7.05it/s][A  DGM Step T=185: Loss=7.743e+00, BitAcc=1.0000, GradNorm=3.514e+01
+
+Class 0 Steps:  82%|████████▏ | 97/119 [00:15<00:03,  7.05it/s][A  DGM Step T=169: Loss=1.654e+01, BitAcc=0.9609, GradNorm=4.877e+01
+
+Class 0 Steps:  83%|████████▎ | 99/119 [00:15<00:02,  7.04it/s][A  DGM Step T=153: Loss=6.129e+00, BitAcc=1.0000, GradNorm=2.617e+01
+
+Class 0 Steps:  85%|████████▍ | 101/119 [00:15<00:02,  7.05it/s][A  DGM Step T=137: Loss=8.469e+00, BitAcc=0.9922, GradNorm=2.609e+01
+
+Class 0 Steps:  87%|████████▋ | 103/119 [00:16<00:02,  7.02it/s][A  DGM Step T=121: Loss=9.099e+00, BitAcc=0.9766, GradNorm=2.923e+01
+
+Class 0 Steps:  88%|████████▊ | 105/119 [00:16<00:01,  7.03it/s][A  DGM Step T=105: Loss=5.665e+00, BitAcc=1.0000, GradNorm=1.723e+01
+
+Class 0 Steps:  90%|████████▉ | 107/119 [00:16<00:01,  7.04it/s][A  DGM Step T=89: Loss=6.793e+00, BitAcc=0.9922, GradNorm=1.745e+01
+
+Class 0 Steps:  92%|█████████▏| 109/119 [00:17<00:01,  7.04it/s][A  DGM Step T=73: Loss=8.049e+00, BitAcc=0.9922, GradNorm=1.501e+01
+
+Class 0 Steps:  93%|█████████▎| 111/119 [00:17<00:01,  7.04it/s][A  DGM Step T=57: Loss=7.223e+00, BitAcc=1.0000, GradNorm=1.198e+01
+
+Class 0 Steps:  95%|█████████▍| 113/119 [00:17<00:00,  7.05it/s][A  DGM Step T=41: Loss=9.056e+00, BitAcc=0.9922, GradNorm=1.314e+01
+
+Class 0 Steps:  97%|█████████▋| 115/119 [00:17<00:00,  7.05it/s][A  DGM Step T=25: Loss=6.653e+00, BitAcc=0.9844, GradNorm=9.091e+00
+
+Class 0 Steps:  98%|█████████▊| 117/119 [00:18<00:00,  7.06it/s][A  DGM Step T=9: Loss=1.246e+01, BitAcc=0.9609, GradNorm=6.442e+00
+
+Class 0 Steps: 100%|██████████| 119/119 [00:18<00:00,  7.05it/s][AClass 0 Steps: 100%|██████████| 119/119 [00:18<00:00,  6.44it/s]
+Saved final image: ./DATASET/5001_0_final_lossW1.25e+01_acc1.00_0.jpg (Size: torch.Size([3, 512, 512])) Last DGM Step Loss: 1.25e+01, Final Bit Accuracy: 1.0000
+--- Generating image 2/5 (Class Index: 1, Prompt: 'A realistic photo of automobile') ---
+
+Starting generation for class 1, seed 5002.
+
+Class 1 Steps:   0%|          | 0/119 [00:00<?, ?it/s][A  DGM Step T=953: Loss=9.250e+01, BitAcc=0.4688, GradNorm=5.148e+03
+
+Class 1 Steps:   1%|          | 1/119 [00:00<00:28,  4.20it/s][A  DGM Step T=937: Loss=9.087e+01, BitAcc=0.4609, GradNorm=1.453e+03
+
+Class 1 Steps:   3%|▎         | 3/119 [00:00<00:19,  6.00it/s][A  DGM Step T=921: Loss=9.239e+01, BitAcc=0.4219, GradNorm=4.245e+03
+
+Class 1 Steps:   4%|▍         | 5/119 [00:00<00:17,  6.49it/s][AW0519 02:58:40.701000 127524 site-packages/torch/distributed/elastic/agent/server/api.py:719] Received Signals.SIGTERM death signal, shutting down workers
+W0519 02:58:40.702000 127524 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 127567 closing signal SIGTERM
+Traceback (most recent call last):
+  File "/home/teaching/anaconda3/envs/diff/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/teaching/anaconda3/envs/diff/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/teaching/anaconda3/envs/diff/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/home/teaching/anaconda3/envs/diff/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/home/teaching/anaconda3/envs/diff/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/teaching/anaconda3/envs/diff/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+  File "/home/teaching/anaconda3/envs/diff/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/teaching/anaconda3/envs/diff/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 711, in run
+    result = self._invoke_run(role)
+  File "/home/teaching/anaconda3/envs/diff/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 870, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/home/teaching/anaconda3/envs/diff/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 127524 got signal: 15
