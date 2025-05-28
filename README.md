@@ -58,4 +58,5 @@ jupyter notebook image_inference.ipynb
 Below is a summary of the work we’ve done over the past four months:
 
 ![Project Timeline](videoseal/assets/imgs/timeline.jpg)
+![Diffusion](videoseal/assets/imgs/diffusion.png)
 
