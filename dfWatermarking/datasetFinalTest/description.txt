@@ -1,0 +1,1 @@
+Here, we tried to embed different binary watermarks into different images using the token patterns method. Later we tried training a vision transformer to extract the watermarks from the images.
